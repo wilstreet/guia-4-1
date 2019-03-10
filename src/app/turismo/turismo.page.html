@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>turismo - {{nombre}}</ion-title> -->
+    <ion-title>Turismo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+    <ion-card class="welcome-card" *ngFor="let pais of arrayturismo" >
+        <ion-img src={{pais.img}}></ion-img>
+        <ion-card-header>
+          <ion-card-subtitle> {{pais.lugar}} </ion-card-subtitle>
+          <ion-card-title>{{pais.nombre}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{pais.parrafo}}</p>
+        </ion-card-content>
+      </ion-card>
+
+
+      <br>
+      <br>
+      
+      
+      
+   
+</ion-content>

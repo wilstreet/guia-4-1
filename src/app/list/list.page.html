@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Paises de America
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none">
+    <ion-list-header>
+
+      <ion-label>Paises de Ammerica</ion-label>
+
+    </ion-list-header>
+    <ion-item href="https://es.wikipedia.org/wiki/Am%C3%A9rica">
+      <ion-icon slot="start" color="medium" name="https://es.wikipedia.org/wiki/Am%C3%A9rica"></ion-icon>
+
+
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Americas_%28orthographic_projection%29.svg/220px-Americas_%28orthographic_projection%29.svg.png">
+        </ion-avatar>
+        <ion-label></ion-label>
+      </ion-item>
+
+
+    </ion-item>
+    <ion-item href="https://en.wikipedia.org/wiki/Americas">
+      <ion-label>paises de america</ion-label>
+    </ion-item>
+
+
+
+    <ion-item *ngFor="let am of arraylist">
+      <ion-avatar slot="start">
+        <img src="{{am.img}}">
+      </ion-avatar>
+      <ion-label>{{am.pais}} <br />{{am.capital}}<br /> {{am.poblacion}}</ion-label>
+    </ion-item>
+
+
+
+
+
+  </ion-list>
+</ion-content>
